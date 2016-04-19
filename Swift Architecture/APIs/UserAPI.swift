@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import Alamofire
+
+struct UserAPI {
+    
+    static func signInWithUsername(username: String, password: String, role: User.Role, completion: ((result: Result<User, APIError>) -> Void)?) {
+        let userService = UserService()
+        
+        userService.signInWithUsername(username, password: password, role: role, completion: completion)
+    }
+}

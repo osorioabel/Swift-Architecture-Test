@@ -14,6 +14,6 @@ enum Fonts: String {
     case Background = "ic_background"
     
     var font: UIFont {
-        return UIFont(name:self.rawValue, size:14.0)
+        return UIFont(name:self.rawValue, size:14.0)!
     }
 }

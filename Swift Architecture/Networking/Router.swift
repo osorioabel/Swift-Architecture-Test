@@ -27,11 +27,8 @@ enum Router: URLRequestConvertible {
     }
     
     static var authorizationToken: String? {
-        let credentials = CredentialsHelper.loadCredentialsWithIdentifier(CredentialsHelper.authorizationIdentifier)
-        
-        return credentials?.authorizationToken
+       return ""
     }
-    
     case AccessToken([String: AnyObject])
     case RefreshToken([String: String])
     

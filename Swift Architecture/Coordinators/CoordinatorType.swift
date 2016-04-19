@@ -22,5 +22,6 @@ protocol CoordinatorType: class {
 enum Transition {
     
     case SignIn
+    case SignOut
     
 }

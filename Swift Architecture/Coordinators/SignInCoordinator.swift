@@ -15,20 +15,16 @@ class SignInCoordinator: CoordinatorType {
     weak var delegate: CoordinatorType?
     
     init() {
-        //        let roleSelectionVC = RoleSelectionViewController()
-        //        let navigationVC = SignInNavigationController(rootViewController: roleSelectionVC)
-        //        baseController = navigationVC
-        //        roleSelectionVC.navigationCoordinator = self
+        baseController = UIViewController()
     }
     
     func performTransition(transition: Transition) {
-        let navigationController = baseController as? UINavigationController
+        _ = baseController as? UINavigationController
         
         switch transition {
        
         default:
             delegate?.performTransition(transition)
         }
-    }
     }
 }

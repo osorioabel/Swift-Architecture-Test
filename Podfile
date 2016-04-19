@@ -8,4 +8,5 @@ pod 'Alamofire'
 pod 'HexColors'
 pod 'KeychainAccess'
 pod 'SVProgressHUD'
+pod 'AlamofireObjectMapper'
 end
