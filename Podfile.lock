@@ -1,0 +1,19 @@
+PODS:
+  - Alamofire (3.3.1)
+  - HexColors (4.0.0)
+  - KeychainAccess (2.3.5)
+  - SVProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - HexColors
+  - KeychainAccess
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
+  KeychainAccess: e283c1981a6c5655e1984cd411c6faf16fa165ae
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+COCOAPODS: 0.39.0
