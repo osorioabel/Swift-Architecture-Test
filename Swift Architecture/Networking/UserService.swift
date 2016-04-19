@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import AlamofireObjectMapper
 
 struct UserService {
     
@@ -31,21 +32,14 @@ struct UserService {
             parameters[Key.Platform.value] = PlatformHelper.platform()
             parameters[Key.RoleId.value] = String(role.value)
             
-            Alamofire.request(Router.SignIn(parameters)).validate().responseJSON { (response) -> Void in
+            Alamofire.request(Router.SignIn(parameters)).validate().responseObject { (response: Response<User, NSError>) -> Void in
                 var finalResult: Result<User, APIError>
-                
                 switch response.result {
                 case .Success(let JSON):
-                    guard let JSONdictionary = JSON as? [String: AnyObject],
-                        user = UserFactory.makeUser(JSONDictionary: JSONdictionary) else {
-                            print("Couldn't get a dictionary from the response: \(JSON)")
-                            finalResult = Result.Failure(APIError.defaultError())
-                            
-                            return
+                    let userFromResponse = response.result.value
+                    if let userModel = userFromResponse {
+                        finalResult = Result.Success(userModel)
                     }
-                    
-                    finalResult = Result.Success(user)
-                    
                 case .Failure(let error):
                     let apiError = APIError.apiError(error: error, data: response.data)
                     finalResult = Result.Failure(apiError)
