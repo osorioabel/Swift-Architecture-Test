@@ -35,9 +35,9 @@
 		0D62BFE91CC67E370067F137 /* Swift Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D62BFEC1CC67E370067F137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D62BFEE1CC67E370067F137 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0D62BFF31CC67E370067F137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Swift Architecture/Assets.xcassets"; sourceTree = "<group>"; };
+		0D62BFF31CC67E370067F137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D62BFF61CC67E370067F137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0D62BFF81CC67E370067F137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Swift Architecture/Info.plist"; sourceTree = "<group>"; };
+		0D62BFF81CC67E370067F137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D62C00C1CC680120067F137 /* RootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		0D62C00E1CC680290067F137 /* CoordinatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
 		0D62C0101CC681160067F137 /* SignInCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
@@ -73,9 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				0D62BFEB1CC67E370067F137 /* Swift Architecture */,
-				0D62BFF31CC67E370067F137 /* Assets.xcassets */,
-				0D62BFF81CC67E370067F137 /* Info.plist */,
-				0D62BFF51CC67E370067F137 /* LaunchScreen.storyboard */,
 				0D62BFEA1CC67E370067F137 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,7 +109,7 @@
 			children = (
 				0D62C0141CC682A70067F137 /* UserAPI.swift */,
 			);
-			name = APIs;
+			path = APIs;
 			sourceTree = "<group>";
 		};
 		0D62BFFF1CC67E840067F137 /* Controllers */ = {
@@ -120,7 +117,7 @@
 			children = (
 				0D62BFEE1CC67E370067F137 /* ViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		0D62C0001CC67E8C0067F137 /* Coordinators */ = {
@@ -130,7 +127,7 @@
 				0D62C00C1CC680120067F137 /* RootCoordinator.swift */,
 				0D62C0101CC681160067F137 /* SignInCoordinator.swift */,
 			);
-			name = Coordinators;
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		0D62C0011CC67E930067F137 /* Errors */ = {
@@ -138,7 +135,7 @@
 			children = (
 				0D62C0121CC6818D0067F137 /* Errors.swift */,
 			);
-			name = Errors;
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		0D62C0021CC67E980067F137 /* Extensions */ = {
@@ -147,7 +144,7 @@
 				0D62C0161CC682E30067F137 /* UIViewController+Alerts.swift */,
 				0D62C0171CC682E30067F137 /* UIViewController+BackButton.swift */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0D62C0041CC67EA70067F137 /* Helpers */ = {
@@ -156,7 +153,7 @@
 				0D62C01A1CC683220067F137 /* EncodingHelper.swift */,
 				0D62C01B1CC683220067F137 /* ProgressHelper.swift */,
 			);
-			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		0D62C0051CC67EB10067F137 /* Model */ = {
@@ -164,7 +161,7 @@
 			children = (
 				0D62C01E1CC6833F0067F137 /* User.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0D62C0061CC67EB90067F137 /* Networking */ = {
@@ -172,7 +169,7 @@
 			children = (
 				0D62C0201CC6836A0067F137 /* Router.swift */,
 			);
-			name = Networking;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		0D62C0071CC67EC80067F137 /* Resources */ = {
@@ -181,24 +178,26 @@
 				0D62C0241CC683850067F137 /* Assets */,
 				0D62C0231CC6837E0067F137 /* Fonts */,
 				0D62C0221CC683760067F137 /* Localization */,
+				0D62BFF81CC67E370067F137 /* Info.plist */,
+				0D62BFF51CC67E370067F137 /* LaunchScreen.storyboard */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		0D62C0081CC67ECE0067F137 /* Validators */ = {
 			isa = PBXGroup;
 			children = (
-				0D62C0301CC6995D0067F137 /* Validator.swift */,
 				0D62C02F1CC6995D0067F137 /* UserValidator.swift */,
+				0D62C0301CC6995D0067F137 /* Validator.swift */,
 			);
-			name = Validators;
+			path = Validators;
 			sourceTree = "<group>";
 		};
 		0D62C0091CC67ED50067F137 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		0D62C0221CC683760067F137 /* Localization */ = {
@@ -207,7 +206,7 @@
 				0D62C0271CC683D60067F137 /* Localizable.strings */,
 				0D62C0281CC683D60067F137 /* LocalizableString.swift */,
 			);
-			name = Localization;
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		0D62C0231CC6837E0067F137 /* Fonts */ = {
@@ -215,16 +214,17 @@
 			children = (
 				0D62C02D1CC683F30067F137 /* Fonts.swift */,
 			);
-			name = Fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		0D62C0241CC683850067F137 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0D62C0261CC683D60067F137 /* ImageAsset.swift */,
+				0D62BFF31CC67E370067F137 /* Assets.xcassets */,
 				0D62C0251CC683D60067F137 /* Colors.swift */,
+				0D62C0261CC683D60067F137 /* ImageAsset.swift */,
 			);
-			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,7 +329,7 @@
 				0D62BFF61CC67E370067F137 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = "Swift Architecture";
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -422,7 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Swift Architecture/Info.plist";
+				INFOPLIST_FILE = "Swift Architecture/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kogimobile.Swift-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Swift Architecture/Info.plist";
+				INFOPLIST_FILE = "Swift Architecture/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kogimobile.Swift-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -459,6 +459,7 @@
 				0D62BFFD1CC67E370067F137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
